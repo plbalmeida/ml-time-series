@@ -1,6 +1,6 @@
 # ML para Séries Temporais
 
-Esse repo é parte do [**Hands-on de ML para Séries Temporais**](https://plbalmeida.gitbook.io/fiap-hands-on-de-ml-para-series-temporais) dos cursos de Pós Tech da FIAP de Engenharia de MLe Data Analytics.
+Esse repo é parte do [**Hands-on de ML para Séries Temporais**](https://plbalmeida.gitbook.io/fiap-hands-on-de-ml-para-series-temporais) dos cursos de Pós Tech da FIAP de Engenharia de Machine Learning e Data Analytics.
 
 A solução consiste em uma arquitetura com as seguintes componentes:
 
@@ -17,6 +17,8 @@ O projeto foi desenvolvido com a seguinte stack:
 - `git`: para versionamento de código;
 
 - `GitHub Actions`: para esteira de CI;
+
+- `Streamlit`: para servir os as previsões do modelo de ML treinado.
 
 Estrutura do repo:
 
@@ -57,6 +59,14 @@ O script `model_training/main.py` para de treino do modelo será executado prime
 <div align="center">
   <figure>
     <img src="figures/execucao.png" alt="Logs de execução">
+  </figure>
+</div>
+
+Com merge para brach `main` do repo, é esperado que a esteira de CI do GitHub Actions com jobs de `lint` e `test` seja executada:
+
+<div align="center">
+  <figure>
+    <img src="figures/ci.png" alt="Logs de execução">
   </figure>
 </div>
 
