@@ -1,3 +1,8 @@
+# ignora o diretório de ambiente virtual
 venv/
+
+# ignora todos os diretórios de __pycache__
 **/__pycache__/
+
+# ignora todos os arquivos .csv
 *.csv
