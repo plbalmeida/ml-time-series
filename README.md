@@ -2,9 +2,9 @@
 
 Esse repo é parte do [**Hands-on de ML para Séries Temporais**](https://plbalmeida.gitbook.io/fiap-hands-on-de-ml-para-series-temporais) dos cursos de Pós Tech da FIAP de Engenharia de Machine Learning e Data Analytics.
 
-A solução consiste em uma arquitetura com as seguintes componentes:
+A solução consiste nos seguintes componentes:
 
-- componente `model_training` para obtenção dos dados de preço do petróleo bruto do IPEA, transformação dos dados, treino do modelo, e geração de 1 arquivo com previsões, e 1 arquivo com Importência de Features;
+- componente `model_training` para obtenção dos dados de preço do petróleo bruto do IPEA, transformação dos dados, treino do modelo, e geração de 1 arquivo com previsões D+15, e 1 arquivo com Importância de Features;
 
 - a componente `streamlit` consome os dados de previsão gerados pelo `model_training` e gera visualizações dos mesmos que pode ser acessada localmente por uma URL fornecida nos logs de execução. 
 
@@ -58,7 +58,7 @@ O script `model_training/main.py` para de treino do modelo será executado prime
 
 <div align="center">
   <figure>
-    <img src="figures/execucao.png" alt="Logs de execução">
+    <img src="figures/execucao.png" alt="Logs de execução" width="300">
   </figure>
 </div>
 
@@ -92,7 +92,7 @@ E o gráfico com importância de features:
 
 <div align="center">
   <figure>
-    <img src="figures/preds2.png" alt="Logs de execução">
+    <img src="figures/preds3.png" alt="Logs de execução">
   </figure>
 </div>
 
