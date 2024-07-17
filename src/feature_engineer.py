@@ -1,6 +1,5 @@
 from sklearn.base import BaseEstimator, TransformerMixin
 
-
 class FeatureEngineer(BaseEstimator, TransformerMixin):
     """
     Feature engineer para séries temporais.
@@ -75,4 +74,7 @@ class FeatureEngineer(BaseEstimator, TransformerMixin):
         X["day_of_week"] = X.index.dayofweek
         X = X.drop(columns=[self.target])
         X.fillna(0, inplace=True)
+
+
+        
         return X
